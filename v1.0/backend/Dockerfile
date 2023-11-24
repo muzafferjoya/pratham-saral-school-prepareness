@@ -1,4 +1,4 @@
-FROM node:21.1-bullseye-slim
+FROM node:lts-alpine3.17
 
 # Upgrade OpenSSL to version 3.0.12
 RUN apk update && apk add --no-cache openssl=3.0.12-r1
