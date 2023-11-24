@@ -1,4 +1,4 @@
-FROM node:20.9
+FROM node:21.1-bullseye-slim
 
 # Upgrade OpenSSL to version 3.0.12
 RUN apk update && apk add --no-cache openssl=3.0.12-r1
