@@ -1,4 +1,4 @@
-FROM node:16.8
+FROM node:20.9
 
 # Upgrade OpenSSL to version 3.0.12
 RUN apk update && apk add --no-cache openssl=3.0.12-r1
