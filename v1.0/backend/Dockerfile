@@ -1,4 +1,4 @@
-FROM node:21.1-bookworm-slim
+FROM node:20.8.1-alpine3.17
 LABEL maintainer="dileep.gadiraju@tarento.com"
 
 ENV PROFILE=dev
