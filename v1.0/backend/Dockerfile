@@ -1,5 +1,9 @@
 FROM node:20.8.1-alpine3.17
-LABEL maintainer="dileep.gadiraju@tarento.com"
+
+# Upgrade OpenSSL to version 3.0.12
+RUN apk update && apk add --no-cache openssl=3.0.12-r0
+
+LABEL maintainer="muzafferjoya@gmail.com"
 
 ENV PROFILE=dev
 ENV PORT=3000
