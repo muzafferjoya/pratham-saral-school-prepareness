@@ -1,7 +1,7 @@
-FROM node:20.8.1-alpine3.17
+FROM node:16.8
 
 # Upgrade OpenSSL to version 3.0.12
-RUN apk update && apk add --no-cache openssl=3.0.12-r0
+RUN apk update && apk add --no-cache openssl=3.0.12-r1
 
 LABEL maintainer="muzafferjoya@gmail.com"
 
